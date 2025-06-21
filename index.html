@@ -1426,7 +1426,7 @@
 
 <header class="header">
     <div class="logo">
-        <img src="{{ url_for('static', filename='uploads/LogoAlatauСity.svg') }}" alt="Logo">
+background-image: url('static/uploads/LogoAlatauCity.svg');
     </div>
 
     <nav class="nav">
@@ -1466,7 +1466,7 @@
 
 <section class="hero">
     <div class="slides-container">
-        <div class="hero-slide" style="background-image: url('{{ url_for('static', filename='uploads/Background.png') }}');">
+        <div class="hero-slide" style="background-image: url('static/uploads/Background.png')">
             <div class="hero-slide-content">
                 <h1>Alatau City</h1>
                 <p>Территория опережающего развития</p>
@@ -1474,7 +1474,7 @@
             </div>
         </div>
 
-        <div class="hero-slide" style="background-image: url('{{ url_for('static', filename='uploads/Background.png') }}');">
+        <div class="hero-slide" style="background-image: url('static/uploads/Background.png')">
             <div class="hero-slide-content">
                 <h1>Alatau City - Slide 2</h1>
                 <p>Инновации и возможности</p>
@@ -1482,7 +1482,7 @@
             </div>
         </div>
 
-        <div class="hero-slide" style="background-image: url('{{ url_for('static', filename='uploads/Background.png') }}');">
+        <div class="hero-slide" style="background-image: url('static/uploads/Background.png')">
             <div class="hero-slide-content">
                 <h1>Alatau City - Slide 3</h1>
                 <p>Будущее начинается здесь</p>
@@ -1756,10 +1756,10 @@
 
         <div class="districts-map">
             <div class="map-puzzle">
-                <img src="{{ url_for('static', filename='uploads/1.svg') }}" class="map-piece green-piece" data-district="green" alt="">
-                <img src="{{ url_for('static', filename='uploads/2.svg') }}" class="map-piece orange-piece" data-district="orange" alt="">
-                <img src="{{ url_for('static', filename='uploads/3.svg') }}" class="map-piece yellow-piece" data-district="yellow" alt="">
-                <img src="{{ url_for('static', filename='uploads/4.svg') }}" class="map-piece blue-piece" data-district="blue" alt="">
+                <img src="static/uploads/1.svg" class="map-piece green-piece" data-district="green" alt="">
+                <img src="static/uploads/2.svg" class="map-piece green-piece" data-district="green" alt="">
+                <img src="static/uploads/3.svg" class="map-piece green-piece" data-district="green" alt="">
+                <img src="static/uploads/4.svg" class="map-piece green-piece" data-district="green" alt="">
             </div>
         </div>
     </div>
@@ -1768,7 +1768,7 @@
 <section class="investment">
     <div class="investment-grid">
         <div class="investment-main">
-            <img src="{{ url_for('static', filename='uploads/Image (1).png') }}" alt="Город инвестиционных возможностей">
+<img src="static/uploads/Image (1).png" alt="Город инвестиционных возможностей">
             <div class="investment-main-text">
                 <h2>Город инвестиционных<br>возможностей</h2>
             </div>
@@ -1812,7 +1812,7 @@
 
         <div class="news-grid">
             <div class="main-news-item">
-                <img src="{{ url_for('static', filename='uploads/news-main.jpg') }}" alt="Main news">
+<img src="static/uploads/news-main.jpg" alt="Main news">
                 <div class="news-tag" style="background: #ff6c36;">
                     Новости
                 </div>
@@ -1833,7 +1833,7 @@
             <div class="small-news-items-container">
                 <div class="news-item-small">
                     <div class="news-image-container">
-                        <img src="{{ url_for('static', filename='uploads/news-1.jpg') }}" alt="">
+<img src="static/uploads/news-1.jpg" alt="">
                         <div class="news-tag" style="background: #ff6933;">
                             Интервью
                         </div>
@@ -1853,7 +1853,7 @@
 
                 <div class="news-item-small">
                     <div class="news-image-container">
-                        <img src="{{ url_for('static', filename='uploads/news-2.jpg') }}" alt="">
+<img src="static/uploads/news-2.jpg" alt="">
                         <div class="news-tag" style="background: #ff6933;">
                             Новости
                         </div>
@@ -1873,7 +1873,7 @@
 
                 <div class="news-item-small">
                     <div class="news-image-container">
-                        <img src="{{ url_for('static', filename='uploads/news-3.jpg') }}" alt="">
+<img src="static/uploads/news-3.jpg" alt="">
                         <div class="news-tag" style="background: #6366f1;">
                             Событие
                         </div>
@@ -2014,9 +2014,9 @@
         const nextSlideBtn = document.getElementById('nextSlideBtn');
 
         const slidesData = [
-            { backgroundImage: '{{ url_for('static', filename='uploads/Background.png') }}', title: 'Alatau City', description: 'Территория опережающего развития' },
-            { backgroundImage: '{{ url_for('static', filename='uploads/Background.png') }}', title: 'Alatau City - Slide 2', description: 'Инновации и возможности' },
-            { backgroundImage: '{{ url_for('static', filename='uploads/Background.png') }}', title: 'Alatau City - Slide 3', description: 'Будущее начинается здесь' }
+{ backgroundImage: 'static/uploads/Background.png', title: 'Alatau City', description: 'Территория опережающего развития' },
+{ backgroundImage: 'static/uploads/Background.png', title: 'Alatau City', description: 'Территория опережающего развития' },
+{ backgroundImage: 'static/uploads/Background.png', title: 'Alatau City', description: 'Территория опережающего развития' },
         ];
 
         let currentSlideIndex = 0;
